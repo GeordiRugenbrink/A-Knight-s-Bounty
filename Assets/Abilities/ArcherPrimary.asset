@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b0390773dbd9b44bcce15619965089, type: 3}
+  m_Name: ArcherPrimary
+  m_EditorClassIdentifier: 
+  abilityName: Archer Primary
+  sprite: {fileID: 21300000, guid: 812cdc956c7c3f944aade8ecd5a51a7c, type: 3}
+  audio: {fileID: 0}
+  cooldown: 0.4
+  projectileToSpawn: {fileID: 1596331249808718, guid: 3d0e0aa4c3107aa44b1cf1ff7e6fd31a,
+    type: 2}

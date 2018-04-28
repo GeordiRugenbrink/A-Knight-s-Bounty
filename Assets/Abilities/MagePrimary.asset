@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b0390773dbd9b44bcce15619965089, type: 3}
+  m_Name: MagePrimary
+  m_EditorClassIdentifier: 
+  abilityName: Mage Primary
+  sprite: {fileID: 21300002, guid: c9178f48fef46dc4cac6416069a6b156, type: 3}
+  audio: {fileID: 0}
+  cooldown: 0.5
+  projectileToSpawn: {fileID: 1243868632466286, guid: 8803ef206c771684a86c53f02b50989c,
+    type: 2}
