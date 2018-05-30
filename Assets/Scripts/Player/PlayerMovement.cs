@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class PlayerMovement : Movement {
 
-    [SerializeField]
-    private float movementSpeed = 5f;
+    private StatManager statManager;
+
+    private void Awake() {
+        statManager = GetComponent<StatManager>();
+    }
 
     void Update() {
         Movement();
     }
 
     public void Movement() {
-        Move(new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")), movementSpeed);
+        Move(new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")), statManager.MovementSpeed);
     }
 }

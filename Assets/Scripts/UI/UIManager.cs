@@ -11,15 +11,18 @@ public class UIManager : MonoBehaviour {
     public Slider experienceBar;
     public Text levelText;
 
+    private StatManager statManager;
+
     private void Awake() {
         Utility.uiManager = this;
+        statManager = Utility.player.GetComponent<StatManager>();
         DontDestroyOnLoad(gameObject);
     }
 
     private void Update() {
-        healthBar.maxValue = Utility.statManager.Health;
-        healthBar.value = Utility.statManager.CurrentHealth;
-        healthText.text = Utility.statManager.CurrentHealth + " / " + Utility.statManager.Health + " hp";
+        healthBar.maxValue = statManager.Health;
+        healthBar.value = statManager.CurrentHealth;
+        healthText.text = statManager.CurrentHealth + " / " + statManager.Health + " hp";
 
         experienceBar.maxValue = Utility.levelManager.NextLevelExperience;
         experienceBar.value = Utility.levelManager.CurrentExperience;

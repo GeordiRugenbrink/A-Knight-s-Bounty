@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49aedb1d918ce054b8024fb8d992733d, type: 3}
+  m_Name: ArcherRadiale
+  m_EditorClassIdentifier: 
+  abilityName: Arrow Tornado
+  sprite: {fileID: 21300000, guid: 0fe579cd0fa6aed4b94ae122f324c0bb, type: 3}
+  audio: {fileID: 0}
+  cooldown: 2
+  _numberOfProjectilesToSpawn: 10
+  _angleStep: 360
+  _projectileToSpawn: {fileID: 1596331249808718, guid: 3d0e0aa4c3107aa44b1cf1ff7e6fd31a,
+    type: 2}
+  _movementSpeedMultiplier: 1.5
+  _timeBonusMovementSpeed: 1
+  _hasBonusMovementSpeed: 1

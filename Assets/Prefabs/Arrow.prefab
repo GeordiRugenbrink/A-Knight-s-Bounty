@@ -79,9 +79,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _movementSpeed: 10
+  _timeToDestroy: 2
+  _attackType: 0
+  poisonEffect: {fileID: 114553589529850666, guid: af8e12fcaae48c542a9b742b2aa11054,
+    type: 2}
   _damage: 8
-  _timeAlive: 5
-  signSprite: {fileID: 21300000, guid: 4332437b6212c6a43b277fe76f4734e3, type: 3}
 --- !u!212 &212500086903813762
 SpriteRenderer:
   m_ObjectHideFlags: 1

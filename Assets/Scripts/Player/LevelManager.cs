@@ -9,6 +9,8 @@ public class LevelManager : MonoBehaviour {
     [SerializeField]
     private float _nextLevelExperience;
 
+    private StatManager statManager;
+
     private const float MAXIMUM_EXPERIENCE_POINTS = 100000;
 
     [SerializeField]
@@ -33,14 +35,15 @@ public class LevelManager : MonoBehaviour {
 
     private void Awake() {
         Utility.levelManager = this;
+        statManager = GetComponent<StatManager>();
         NextLevelExperience = Mathf.Floor(_levelExperienceCurve.Evaluate((CurrentLevel / _levelMax)) * MAXIMUM_EXPERIENCE_POINTS);
     }
 
     public void LevelUp() {
         CurrentLevel++;
         CurrentExperience = 0;
-        Utility.statManager.LevelUpStats();
-        Utility.statManager.CurrentHealth += Utility.statManager.healthStatAmount;
+        statManager.LevelUpStats();
+        statManager.CurrentHealth += statManager.healthStatAmount;
         NextLevelExperience = Mathf.Floor(_levelExperienceCurve.Evaluate((_currentLevel / _levelMax)) * MAXIMUM_EXPERIENCE_POINTS);
     }
 

@@ -8,6 +8,7 @@ public class ProjectileAbility : Ability {
     private GameObject projectileToSpawn;
 
     public override void TriggerAbility() {
-        Instantiate(projectileToSpawn, Utility.player.transform.position, Utility.player.transform.rotation);
+        var projectile = Instantiate(projectileToSpawn, Utility.player.transform.position, Utility.player.transform.rotation);
+        Utility.RotateProjectileToMouse(projectile.transform);
     }
 }

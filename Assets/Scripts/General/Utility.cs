@@ -6,7 +6,6 @@ public static class Utility {
 
     public static GameController gameController;
     public static Player player;
-    public static StatManager statManager;
     public static LevelManager levelManager;
     public static UIManager uiManager;
 
@@ -36,7 +35,7 @@ public static class Utility {
         }
     }
 
-    public static void RotateProjectile(Transform transform) {
+    public static void RotateProjectileToMouse(Transform transform) {
         Vector3 rotation = new Vector3(0f, 0f, GetMouseAngle(transform));
         transform.eulerAngles = rotation;
     }

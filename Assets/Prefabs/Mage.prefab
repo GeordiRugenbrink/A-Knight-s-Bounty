@@ -105,7 +105,10 @@ MonoBehaviour:
   _meleeStat: 1
   _rangedStat: 1
   _mageStat: 1
+  _armourStat: 0
+  _magicArmourStat: 0
   _health: 100
+  _movementSpeed: 4
   color: {r: 1, g: 0, b: 0, a: 1}
   _flashTime: 10
   meleeStatAmount: 1
@@ -123,7 +126,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77c732ba95adceb4cb3eadd7e74b65fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 4
 --- !u!114 &114763661902663034
 MonoBehaviour:
   m_ObjectHideFlags: 1
